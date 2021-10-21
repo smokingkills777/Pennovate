@@ -1,0 +1,37 @@
+$color-red-light: #F53855;
+$color-red-dark: #ED1C2E;
+$color-black-light: #4F5665;
+
+a{
+    text-decoration: none;
+}
+button{
+    padding: 13px 20px;
+    border-radius: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-red-light;
+    border: 1px solid $color-red-light;
+    background-color: transparent;
+}
+header{
+    padding: 40px 0 0 0;
+}
+.header__logo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #001F7E;
+    font-size: 20px;
+    &::before{
+        content: url(../img/00_header/logo-img.svg);
+    }
+}
+.header__list{
+    margin: 0;
+    a{
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        color: $color-black-light;
+    }
+}
