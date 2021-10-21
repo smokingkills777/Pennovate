@@ -1,11 +1,13 @@
 $color-red-light: #F53855;
 $color-red-dark: #ED1C2E;
 $color-black-light: #4F5665;
+$color-black-dark: #0B132A;
+$color-blue-dark: #001F7E;
 
-a{
+a {
     text-decoration: none;
 }
-button{
+button {
     padding: 13px 20px;
     border-radius: 50px;
     font-family: 'Rubik', sans-serif;
@@ -15,23 +17,94 @@ button{
     border: 1px solid $color-red-light;
     background-color: transparent;
 }
-header{
+header {
     padding: 40px 0 0 0;
+    background-image: linear-gradient(to bottom, rgba(0, 31, 126, 0.07) 10%, #fff 90%);
 }
-.header__logo{
+.header__logo {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    color: #001F7E;
+    color: $color-blue-dark;
     font-size: 20px;
-    &::before{
+    &::before {
         content: url(../img/00_header/logo-img.svg);
     }
+    &:hover{
+        color: $color-blue-dark;
+    }
 }
-.header__list{
+.header__list {
     margin: 0;
-    a{
+    a {
         font-family: 'Rubik', sans-serif;
         font-size: 16px;
         color: $color-black-light;
+    }
+}
+
+#first-section {
+    padding-top: 96px;
+    padding-bottom: 65px;
+}
+.first-section__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 50px;
+    color: $color-black-dark;
+}
+.first-section__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: $color-black-light;
+    span{
+        font-weight: 700;
+    }
+}
+.first-section__feedback {
+    position: relative;
+    margin-top: 52px;
+    height: 983px;
+    background: url(../img/01_first-section/world-map.svg) no-repeat;
+    background-size: 100%;
+    .point{
+        box-sizing: border-box;
+        position: absolute;
+        top: 55%;
+        left: 85%;
+        padding: 4%;
+        transition: all .3s ease-in-out;
+        &:hover{
+            transform: scale(1.4);
+        }
+    }
+}
+.first-section__form {
+    margin: 160px auto 0 auto;
+    max-width: 412px;
+    padding: 44px;
+    border-radius: 50px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 18px 11px rgba(123, 129, 134, 0.2);
+    -moz-box-shadow: 0px 0px 18px 11px rgba(123, 129, 134, 0.2);
+    box-shadow: 0px 0px 18px 11px rgba(123, 129, 134, 0.2);
+    p {
+        margin: 28px 0 3px 0;
+    }
+    .first-section__timer {
+        margin: 0 auto; 
+        .timer__item {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 36px;
+            color: $color-blue-dark;
+        }
+    }
+    .first-section__input{
+        margin-top: 44px;
+        & label{
+            color: $color-red-dark;
+        }
     }
 }

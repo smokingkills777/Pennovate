@@ -18,14 +18,14 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row d-flex-flex-row align-content-center">
+            <div class="row d-flex-flex-row align-items-center">
                 <div class="col d-flex justify-content-center align-items-center">
                     <a href="#" class="header__logo">
                         Pennovate
                     </a>
                 </div>
                 <div class="col d-flex align-items-center">
-                    <ul class="d-flex flex-row justify-content-around header__list">
+                    <ul class="d-flex flex-row justify-content-around w-100 header__list">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Service Breakdown</a></li>
@@ -46,9 +46,39 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <h1>
+                        <h1 class="first-section__title">
                             3 INSANELY easy steps to earn up to <br> 18.7 lacs per year while studying in UK
                         </h1>
+                        <h2 class="first-section__subtitle">
+                            (<span>even without</span> work experience, IELTS or TOFEL)
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="first-section__feedback">
+                        <img src="img/01_first-section/point-small.svg" class="point" alt="">
+                        <div class="col-6 d-flex justify-content-center">
+                            <div class="first-section__form d-flex flex-column">
+                                <h3 class="first-section__form-title text-center">
+                                    JOIN THE FREE PROGRAM
+                                </h3>
+                                <p class="text-center">Today’s class starting in:</p>
+    
+                                <div class="first-section__timer d-flex">
+                                    <div class="timer__item" id="hours">00:</div>
+                                    <div class="timer__item" id="minutes">08:</div>
+                                    <div class="timer__item" id="seconds">37</div>
+                                </div>
+    
+                                <div class="first-section__input d-flex flex-column">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" placeholder="Sumanya">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" placeholder="sumanyakghjf@gmail.com">
+                                </div>
+                                <button>JOIN THE FREE TRAINING</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
