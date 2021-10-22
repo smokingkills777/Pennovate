@@ -2,6 +2,7 @@ $color-red-light: #F53855;
 $color-red-dark: #ED1C2E;
 $color-black-light: #4F5665;
 $color-black-dark: #0B132A;
+$color-grey-dark: #494949;
 $color-blue-dark: #001F7E;
 
 a {
@@ -13,9 +14,7 @@ button {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: $color-red-light;
-    border: 1px solid $color-red-light;
-    background-color: transparent;
+    transition: all .25s ease-in-out;
 }
 header {
     padding: 40px 0 0 0;
@@ -41,6 +40,15 @@ header {
         color: $color-black-light;
     }
 }
+.button_transparent {
+    background-color: transparent;
+    color: $color-red-light;
+    border: 1px solid $color-red-light;
+    &:hover {
+        background-color: $color-red-light;
+        color: #fff;
+    }
+}
 
 #first-section {
     padding-top: 96px;
@@ -64,8 +72,9 @@ header {
 }
 .first-section__feedback {
     position: relative;
+    margin: 0 auto;
     margin-top: 52px;
-    height: 983px;
+    max-width: 1050px;
     background: url(../img/01_first-section/world-map.svg) no-repeat;
     background-size: 100%;
     .point{
@@ -87,10 +96,19 @@ header {
     border-radius: 50px;
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 18px 11px rgba(123, 129, 134, 0.2);
-    -moz-box-shadow: 0px 0px 18px 11px rgba(123, 129, 134, 0.2);
-    box-shadow: 0px 0px 18px 11px rgba(123, 129, 134, 0.2);
+       -moz-box-shadow: 0px 0px 18px 11px rgba(123, 129, 134, 0.2);
+            box-shadow: 0px 0px 18px 11px rgba(123, 129, 134, 0.2);
+    .first-section__form-title{
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        color: $color-grey-dark;
+    }
     p {
         margin: 28px 0 3px 0;
+        font-family: 'Poppins', sans-serif;
+        
     }
     .first-section__timer {
         margin: 0 auto; 
@@ -99,12 +117,49 @@ header {
             font-weight: bold;
             font-size: 36px;
             color: $color-blue-dark;
+            letter-spacing: 5px;
         }
     }
-    .first-section__input{
+    .caption__item {
+        &:nth-child(2) {
+            margin: 0 20px;
+        }
+    }
+    .first-section__input {
         margin-top: 44px;
-        & label{
+        & label {
+            margin-left: 17px;
+            font-size: 14px;
             color: $color-red-dark;
+            &:nth-child(3) {
+                margin-top: 14px;
+            }
+        }
+        & input {
+            margin-top: 5px;
+            padding: 7px 21px;
+            border: 1px solid $color-blue-dark;
+            border-radius: 15px;
+        }
+    }
+    .button_form{
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 14px 0;
+        width: 80%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        background-color: $color-red-dark;
+        border: 1px solid $color-red-dark;
+        -webkit-box-shadow: 0px 0px 20px 15px rgba(237, 28, 46, 0.2);
+           -moz-box-shadow: 0px 0px 20px 15px rgba(237, 28, 46, 0.2);
+                box-shadow: 0px 0px 20px 15px rgba(237, 28, 46, 0.2);
+        
+        &:hover {
+            color: $color-red-dark;
+            background-color: #fff;
+            box-shadow: none;
         }
     }
 }
